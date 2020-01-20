@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="body">
+    <h4>Message Form Child: <span [innerHTML]="data"></span></h4>
+    <input type="text" name="message" #message>
+    <button type="button" class="btn btn-success" (click)="openChildWindow(message.value)">Open Child Window With
+      Message</button>
+    <button type="button" class="btn btn-success" (click)="sendMessage(message.value)">Send Message To Last opened
+      Window</button>
+    <div class="doc">
+      <iframe src="../../../assets/window_communication_in_andgular7.pdf"
+        style="padding-top: 10px; height: 79vh;width:100%; border:0" title="Documentation"></iframe>
+    </div>
+  </div>
+</div>

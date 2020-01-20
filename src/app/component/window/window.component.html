@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="body">
+    <h3>Data Passed form Parent : <Span [innerHTML]="data"></Span></h3>
+    <input type="text" name="message" #message>
+    <button type="button" class="btn btn-success" (click)="sendMessageToParent(message.value)">Send Message To
+      Parent</button>
+  </div>
+</div>
